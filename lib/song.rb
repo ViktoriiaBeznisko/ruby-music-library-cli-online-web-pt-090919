@@ -55,12 +55,12 @@ class Song
     # song.artist_name = artist
     # song
 
-    info = filename.split(" - ")
-    artist, name, genre = info[0], info[1], info[2].gsub( ".mp3" , "")
-    genre = Genre.find_or_create_by_name(genre)
-    artist = Artist.find_or_create_by_name(artist)
+  #   info = filename.split(" - ")
+  #   artist, name, genre = info[0], info[1], info[2].gsub( ".mp3" , "")
+  #   genre = Genre.find_or_create_by_name(genre)
+  #   artist = Artist.find_or_create_by_name(artist)
+  #
+  #   new(name,artist,genre)
+  # end
 
-    new(name,artist,genre)
-  end
-  
 end
