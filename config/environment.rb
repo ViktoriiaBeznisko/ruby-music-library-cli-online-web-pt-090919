@@ -1,7 +1,9 @@
 require 'bundler'
 Bundler.require
 
-module Concerns::Findable
+module Concerns
+  module Findable
+  end
 end
 
 
