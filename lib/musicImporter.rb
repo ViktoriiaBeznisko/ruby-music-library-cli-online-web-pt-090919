@@ -6,4 +6,8 @@ attr_accessor :path
       @path = path
   end
 
+  def files
+    Dir.entries(path).select{|file| file.end_with?(".mp3")}
+  end
+
 end
