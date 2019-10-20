@@ -61,6 +61,6 @@ class Song
   #   artist = Artist.find_or_create_by_name(artist)
   #
   #   new(name,artist,genre)
-  # end
+  end
 
 end
