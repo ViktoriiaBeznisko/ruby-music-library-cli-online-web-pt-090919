@@ -6,8 +6,8 @@ class MusicLibraryController
   end
 
 
-def call
-  input = ''
+  def call
+    input = ''
 
   while input != 'exit'
     puts "Welcome to your music library!"
@@ -40,8 +40,9 @@ def call
       "Type in a valid request please"
     end
   end
-
 end
 
+  def list_songs
+  end
 
 end
