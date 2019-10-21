@@ -58,5 +58,27 @@ end
      genres.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name}"}
    end
 
+   def list_songs_by_artist
+       puts "Please enter the name of an artist:"
+       input = gets.strip
+
+       if artist = Artist.find_by_name(input)
+         artist.songs.sort { |a,b| a.name <=> b.name }.each.with_index(1) do |song, i|
+           puts "#{i}. #{song.name} - #{song.genre.name}"
+         end
+       end
+     end
+
+     def list_songs_by_genre
+       puts "Please enter the name of a genre:"
+       input = gets.strip
+
+       if genre = Genre.find_by_name(input)
+         genre.songs.sort { |a,b| a.name <=> b.name }.each.with_index(1) do |song, i|
+           puts "#{i}. #{song.artist.name} - #{song.name}"
+         end
+       end
+     end
+
 
 end
