@@ -47,8 +47,7 @@ end
   end
 
   def list_artists
-    Artist.all.each {|artist| puts "#{artist.name}"}
-  end
+    Artist.all.each {|artist| puts artist.name}
   end
 
 end
